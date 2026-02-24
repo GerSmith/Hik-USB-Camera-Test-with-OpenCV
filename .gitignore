@@ -23,9 +23,6 @@ dist/
 .ipynb_checkpoints
 
 # Hikrobot SDK
-CameraParams_const.py
-CameraParams_header.py
-MvCameraControl_class.py
-MvErrorDefine_const.py
-MvISPErrorDefine_const.py
+Mv*.py
+CameraParams*.py
 PixelType_header.py
