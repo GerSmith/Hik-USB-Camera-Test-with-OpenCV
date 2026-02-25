@@ -1,6 +1,7 @@
 # Hik USB Camera Test with OpenCV
 
-Скрипт для захвата видео с USB3-камеры Hikrobot (MV-CS060-10UC-PRO) с использованием **Hikvision SDK** и **OpenCV**.
+`test_hik_usb.py` - Скрипт для захвата видео с USB3-камеры Hikrobot (MV-CS060-10UC-PRO) с использованием **Hikvision SDK** и **OpenCV**.
+`test_hik_usb_withGUI.py` - Захват видео с камеры обернутый в GUI **PySide6**
 
 ![Пример работы](docs/example.png)  
 *(Пример: захват наконечников в разрешении 3072×2048 с отображением в окне 800×600)*
@@ -26,6 +27,10 @@
     ```bash
     pip install numpy opencv-python
     ```
+- Для работы с GUI `test_hik_usb_withGUI.py`
+    ```bash
+    pip install PySide6
+    ```
 
 ## Запуск
 
@@ -33,6 +38,10 @@
 2. Запусти скрипт:
     ```bash
     python test_hik_usb.py
+    ```
+    или
+    ```bash
+    python test_hik_usb_withGUI.py
     ```
 3. Нажми `q` для выхода
 
@@ -44,6 +53,7 @@
 ```
 .
 ├── test_hik_usb.py             # основной рабочий скрипт
+├── test_hik_usb_withGUI.py     # рабочий скрипт с GUI PySide6
 ├── CameraParams_const.py       # из SDK (из Hikrobot SDK)
 ├── CameraParams_header.py      # из SDK (из Hikrobot SDK)
 ├── MvCameraControl_class.py    # из SDK (из Hikrobot SDK)
